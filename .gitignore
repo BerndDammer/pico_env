@@ -11,3 +11,6 @@ ppg_test
 preload_uf2
 putty
 readback
+zadig
+
+*.txt
