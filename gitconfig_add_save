@@ -1,0 +1,9 @@
+[safe]
+	directory = D:/pico
+	directory = D:/pico/pico-sdk
+	directory = D:/pico/pico-sdk
+[user]
+	email = Bernd.Dammer@web.de
+	name = Bernd Dammer
+[credential "helperselector"]
+	selected = <no helper>
