@@ -1,2 +1,1 @@
-cd putty
-start putty telnet://localhost:4444
+start putty/putty telnet://localhost:4444

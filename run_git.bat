@@ -1,22 +1,29 @@
-set P=c:\pico\bin\cmake\bin
+rem echo %~dp0
+rem echo %~dp1
+rem echo %~d0
+rem echo %~f0
+
+set PICO_ROOT=%~dp0
+
+
+set P=%PICO_ROOT%bin\cmake\bin
 set PATH=%P%;%PATH%
 
-set P=c:\pico\bin\nmake
+set P=%PICO_ROOT%bin\nmake
 set PATH=%P%;%PATH%
 
-set P=c:\pico\bin\gcc\bin
+set P=%PICO_ROOT%bin\gcc\bin
 set PATH=%P%;%PATH%
 
-set P=c:\pico\bin\gcc\arm-none-eabi\bin
+set P=%PICO_ROOT%bin\gcc\arm-none-eabi\bin
 set PATH=%P%;%PATH%
 
-set P=c:\pico
-set PICO_SDK_PATH=%P%\pico-sdk
+set PICO_SDK_PATH=%PICO_ROOT%pico-sdk
 
-set  CMAKE_MAKE_PROGRAM=make
+rem set  CMAKE_MAKE_PROGRAM=make
 
 rem set
 rem pause
 
-start c:\pico\bin\git\git-cmd
+start %PICO_ROOT%bin\git\git-cmd
 

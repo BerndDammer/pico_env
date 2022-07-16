@@ -13,4 +13,7 @@ putty
 readback
 zadig
 
+openocd 
+
+
 *.txt
