@@ -15,5 +15,7 @@ zadig
 
 openocd 
 
-
+*.zip
+*.tar
+*.tar.gz
 *.txt
