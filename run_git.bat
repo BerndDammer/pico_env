@@ -20,6 +20,9 @@ set PATH=%P%;%PATH%
 
 set PICO_SDK_PATH=%PICO_ROOT%pico-sdk
 
+set P=%PICO_ROOT%bin\pre
+set PATH=%P%;%PATH%
+
 rem set  CMAKE_MAKE_PROGRAM=make
 
 rem set

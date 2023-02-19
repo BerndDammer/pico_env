@@ -12,8 +12,13 @@ preload_uf2
 putty
 readback
 zadig
+yijing
 
-openocd 
+docs_to_sort*
+openocd*
+
+clone_*.sh
+
 
 *.zip
 *.tar
