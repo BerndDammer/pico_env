@@ -7,7 +7,6 @@ openocd_prebuild
 openocd_win_bin
 pico-*
 pico_c*
-ppg_test
 preload_uf2
 putty
 readback
@@ -18,7 +17,7 @@ docs_to_sort*
 openocd*
 
 clone_*.sh
-
+pic/pico_drp_pin.png
 
 *.zip
 *.tar
