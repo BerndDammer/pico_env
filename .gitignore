@@ -12,7 +12,8 @@ putty
 readback
 zadig
 yijing
-
+json-c
+FreeRTOS-Kernel
 docs_to_sort*
 openocd*
 
