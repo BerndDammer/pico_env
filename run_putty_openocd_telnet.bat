@@ -1,1 +1,1 @@
-start putty/putty telnet://localhost:4444
+start bin/putty/putty telnet://localhost:4444

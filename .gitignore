@@ -1,13 +1,16 @@
 bin
 doc
-download
+downloads
 ews_pico
 links
 openocd_prebuild
 openocd_win_bin
 pico-*
 pico_c*
-preload_uf2
+
+preload_uf2/*
+! preload_uf2/picoprobe.uf2
+
 putty
 readback
 zadig
@@ -16,6 +19,7 @@ json-c
 FreeRTOS-Kernel
 docs_to_sort*
 openocd*
+
 
 clone_*.sh
 pic/pico_drp_pin.png
