@@ -28,3 +28,5 @@ pic/pico_drp_pin.png
 *.tar
 *.tar.gz
 *.txt
+
+!sdoc/*

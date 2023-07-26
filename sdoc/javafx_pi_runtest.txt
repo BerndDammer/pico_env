@@ -1,0 +1,43 @@
+Prep Raspian 4 run
+>> use without display
+----------------------------------------
+apt update
+apt upgrade
+
+Prep Raspian 4 compile
+----------------------------------------
+apt install git
+>> error wile installing high java version
+apt install ca-certificates-java
+apt install openjdk-17-jre-headless
+apt install maven
+
+compile
+--------------------------------
+>>magic define
+mvn -Djavafx.platform=linux-arm32-monocle clean package
+
+>> arm 64
+mvn -Djavafx.platform=linux-aarch64-monocle clean package
+
+
+run
+--------------------------------------------
+>> not successful
+java -jar my.jar -Djavafx.platform=Monocle -Dmonocle.platform=Linux -Dprism.order=sw
+>> Monocle monocle ????
+
+alternative run (not tested jet)
+-------------------------------------------
+java --module-path /home/pi/armv6hf-sdk/lib --add-modules=javafx.controls -jar app.jar
+
+Links
+-----------------------------------------
+https://stackoverflow.com/questions/61305727/head-cannot-open-etc-ssl-certs-java-cacerts-for-reading-no-such-file-or-dir
+https://stackoverflow.com/questions/74347066/running-javafx-application-on-ubuntu-in-monocle-mode
+>> with bell soft jre
+https://blogs.oracle.com/javamagazine/post/getting-started-with-javafx-on-raspberry-pi
+https://stackoverflow.com/questions/73091002/i-cannot-compile-my-javafx-maven-project-on-raspberry-pi
+https://webtechie.be/post/2020-08-27-azul-zulu-java-11-and-gluon-javafx-11-on-armv6-raspberry-pi
+
+
