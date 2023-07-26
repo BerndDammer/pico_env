@@ -4,6 +4,19 @@ Prep Raspian 4 run
 apt update
 apt upgrade
 
+apt install ca-certificates-java
+apt install openjdk-17-jre-headless
+
+apt install ca-certificates-java
+apt install openjdk-17-jre-headless
+
+>>>>
+>>>>>>>>>>> magic install to get it running
+sudo apt install libpangoft2-1.0-0
+>>>>>
+
+
+
 Prep Raspian 4 compile
 ----------------------------------------
 apt install git
@@ -27,9 +40,78 @@ run
 java -jar my.jar -Djavafx.platform=Monocle -Dmonocle.platform=Linux -Dprism.order=sw
 >> Monocle monocle ????
 
+
+>>>>>>>>>>>>
+>>>>>>> successful run (need admin rights to get mouse at headless mode!)
+sudo java -jar java4wd_controller-0.2.2-SNAPSHOT-jar-with-dependencies.jar -Djavafx.platform=Monocle -Dmonocle.platform=Headless
+>>>>>>>>
+>>>>>>>>>>>>>
+
+
 alternative run (not tested jet)
 -------------------------------------------
 java --module-path /home/pi/armv6hf-sdk/lib --add-modules=javafx.controls -jar app.jar
+
+>>????
+-Djavafx.platform=directfb
+
+
+
+
+*****************************************
+How to run Monocle
+Monocle is now the default implementation of Glass on embedded platforms. 
+
+You can select one of the specific back-ends of Monocle with the system property monocle.platform. Some of the back-ends work only with hardware rendering (the es2 pipeline); some work only with software rendering (the sw pipeline).
+
+MX6	es2 (default) or sw	Freescale i.MX6 SDP or similar boards. Needs accelerated Vivante graphics drivers for framebuffer; not all OS configurations have these.
+OMAP	es2 (default) or sw	
+BeagleBoard xM. Note that the es2 pipeline requires PowerVR graphics drivers, which are only available on soft float configurations of Linux on the BeagleBoard.
+
+OMAPX11	es2	BeagleBoard xM. Renders the JavaFX window stack to a single X11 window.
+X11	es2	BeagleBoard; Linux/x86 desktop
+Linux	sw	Any Linux system; uses software rendering
+Headless	sw	Any system
+VNC	sw	Any system
+If you are running the desktop build of JavaFX or OpenJFX then your only monocle option is Headless. Desktop JavaFX does not support the javafx.platform system property, but you can select Monocle with:
+-Dglass.platform=Monocle -Dmonocle.platform=Headless -Dprism.order=sw
+
+On MacOS and Windows, removing -Dprism.order=sw can be critical to prevent crashes.
+******************************************
+monocle.platform   prism.order
+MX6                   es2 sw
+OMAP                  es2 sw
+OMAPX11               es2              BeagleBoard xM. Renders the JavaFX window stack to a single X11 window
+X11                   es2              desktop
+Linux                 sw               any uses software rendering
+Headless              sw               any
+VNC                   sw               any
+
+
+BeagleBoard xM. Note that the es2 pipeline requires PowerVR graphics drivers, which are only available on soft float configurations of Linux on the BeagleBoard.
+
+	es2	BeagleBoard xM. Renders the JavaFX window stack to a single X11 window.
+X11	es2	BeagleBoard; Linux/x86 desktop
+Linux	sw	Any Linux system; uses software rendering
+Headless	sw	Any system
+VNC	sw	Any system
+If you are running the desktop build of JavaFX or OpenJFX then your only monocle option is Headless. Desktop JavaFX does not support the javafx.platform system property, but you can select Monocle with:
+-Dglass.platform=Monocle -Dmonocle.platform=Headless -Dprism.order=sw
+
+On MacOS and Windows, removing -Dprism.order=sw can be critical to prevent crashes.
+
+
+****************************************
+
+
+
+
+
+
+
+
+
+
 
 Links
 -----------------------------------------
@@ -39,5 +121,5 @@ https://stackoverflow.com/questions/74347066/running-javafx-application-on-ubunt
 https://blogs.oracle.com/javamagazine/post/getting-started-with-javafx-on-raspberry-pi
 https://stackoverflow.com/questions/73091002/i-cannot-compile-my-javafx-maven-project-on-raspberry-pi
 https://webtechie.be/post/2020-08-27-azul-zulu-java-11-and-gluon-javafx-11-on-armv6-raspberry-pi
-
-
+>> run switches
+https://wiki.openjdk.org/display/OpenJFX/Monocle
