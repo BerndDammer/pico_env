@@ -125,3 +125,7 @@ https://stackoverflow.com/questions/73091002/i-cannot-compile-my-javafx-maven-pr
 https://webtechie.be/post/2020-08-27-azul-zulu-java-11-and-gluon-javafx-11-on-armv6-raspberry-pi
 >> run switches
 https://wiki.openjdk.org/display/OpenJFX/Monocle
+
+https://abhinay.xyz/javafx/2022/10/03/OpenJFX-flags.html
+
+
