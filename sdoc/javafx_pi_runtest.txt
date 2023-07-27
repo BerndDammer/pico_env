@@ -7,8 +7,6 @@ apt upgrade
 apt install ca-certificates-java
 apt install openjdk-17-jre-headless
 
-apt install ca-certificates-java
-apt install openjdk-17-jre-headless
 
 >>>>
 >>>>>>>>>>> magic install to get it running
@@ -127,12 +125,18 @@ On MacOS and Windows, removing -Dprism.order=sw can be critical to prevent crash
 ****************************************
 
 
+>>>> check bootmode
+---------------------------------
+vcgencmd otp_dump | grep 17:
+17:3020000a
+
+>>>> enable ssh
+sudo raspi-config
 
 
-
-
-
-
+>>>>>>>>>>>> root fs read only
+----------------------------------
+ro separate add in cmdline.txt
 
 
 
