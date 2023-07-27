@@ -1,2 +1,2 @@
-bin\putty\putty pi:pi@raspberrypi
-pause
+start bin\putty\putty pi@raspberrypi -pw pi
+rem pause

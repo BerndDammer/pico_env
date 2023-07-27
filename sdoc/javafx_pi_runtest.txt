@@ -49,6 +49,27 @@ sudo java -jar java4wd_controller-0.2.2-SNAPSHOT-jar-with-dependencies.jar -Djav
 >>>>>>>>
 >>>>>>>>>>>>>
 
+run2
+-----------------------------------------------------------------------
+>>>> what must be unpacked before run
+javafx.platform.properties
+javafx.properties
+
+>>>> change in javafx.platform.properties
+...
+monocle.platform=Headless
+monocle.egl.lib=gluon_drm
+monocle.prism.order=sw
+monocle.prism.eglfb=false
+monocle.prism.lcdtext=true
+monocle.use.egl=false
+monocle.use.gles2=false
+...
+
+>>>>> now make simple start
+>>>>> sudo necessary for input
+sudo java -jar java4wd_controller-0.2.2-SNAPSHOT-jar-with-dependencies.jar
+
 
 alternative run (not tested jet)
 -------------------------------------------
