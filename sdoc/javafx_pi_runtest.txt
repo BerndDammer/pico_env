@@ -124,6 +124,13 @@ On MacOS and Windows, removing -Dprism.order=sw can be critical to prevent crash
 
 ****************************************
 
+>>>>> activate bootmode Raspi3
+---------------------------------
+at end of config.txt
+(??? no linefeed after line ????)
+program_usb_boot_mode=1
+
+
 
 >>>> check bootmode
 ---------------------------------
@@ -139,6 +146,14 @@ sudo raspi-config
 ro separate add in cmdline.txt
 
 
+>>>>>>>>>>>>>>>> ask raspi version
+----------------------------------------
+
+cat /proc/cpuinfo
+cat /proc/device-tree/model
+cat /sys/firmware/devicetree/base/model
+cat /proc/device-tree/model
+
 
 Links
 -----------------------------------------
@@ -153,4 +168,5 @@ https://wiki.openjdk.org/display/OpenJFX/Monocle
 
 https://abhinay.xyz/javafx/2022/10/03/OpenJFX-flags.html
 
+https://www.raspberrypi-spy.co.uk/2012/09/checking-your-raspberry-pi-board-version/
 
