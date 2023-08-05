@@ -35,6 +35,13 @@ set PATH=%P%;%PATH%
 
 
 set PICO_SDK_PATH=%PICO_ROOT%pico-sdk
+
+set PICO_EXAMPLES_PATH=%PICO_ROOT%pico-examples
+set PICO_EXTRAS_PATH=%PICO_ROOT%pico-extras
+set PICO_PLAYGROUND_PATH=%PICO_ROOT%pico-playground
+
+
+
 set CMAKE_MAKE_PROGRAM=ninja
 set PICO_TOOLCHAIN_PATH=%PICO_ROOT%bin\gcc
 
