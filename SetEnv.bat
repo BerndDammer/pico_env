@@ -45,6 +45,15 @@ set PICO_PLAYGROUND_PATH=%PICO_ROOT%pico-playground
 set CMAKE_MAKE_PROGRAM=ninja
 set PICO_TOOLCHAIN_PATH=%PICO_ROOT%bin\gcc
 
+
+set P=%PICO_ROOT%bin\make
+set PATH=%P%;%PATH%
+
+
+
+
+
+
 rem set CXX=gcc
 
 rem set
