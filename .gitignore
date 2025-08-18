@@ -17,10 +17,12 @@ FreeRTOS-Kernel
 docs_to_sort*
 openocd*
 
-clone_*.sh
+# clone_*.sh
 pic/pico_drp_pin.png
 
 *.zip
 *.tar
 *.tar.gz
 *.txt
+
+

@@ -1,0 +1,29 @@
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   .gitignore
+	new file:   PicoWorkSetup.odt
+	modified:   SetEnv.bat
+	new file:   downloads/mingw-get-setup.exe
+	new file:   git_status.sh
+	new file:   pico_all_projects/mama_all.cmd
+	new file:   pico_all_projects/mama_clear.cmd
+	new file:   pico_all_projects/mama_compile.cmd
+	new file:   projects/pico4wd_pwm
+	modified:   run_pico_project_generator.bat
+	new file:   run_vscode.bat
+	new file:   sdoc/PicoPak2.odt
+	new file:   sdoc/PicoPak2.pdf
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   projects/pico4wd_pwm (modified content)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git_status.lst
+
