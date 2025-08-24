@@ -5,20 +5,19 @@ rem echo %~f0
 
 set PICO_ROOT=%~dp0
 
-
 set P=%PICO_ROOT%bin\cmake\bin
 set PATH=%P%;%PATH%
+
+echo  --------------------------------   maker
 
 rem set P=%PICO_ROOT%bin\nmake
 rem set PATH=%P%;%PATH%
 
-echo  --------------------------------   maker
-rem set P=%PICO_ROOT%bin\ninja
-rem set PATH=%P%;%PATH%
+set P=%PICO_ROOT%bin\ninja
+set PATH=%P%;%PATH%
 
 set P=%PICO_ROOT%bin\make
 set PATH=%P%;%PATH%
-
 
 echo  ---------------------------- compiler
 set P=%PICO_ROOT%bin\msys2
@@ -35,8 +34,8 @@ rem set PATH=%P%;%PATH%
 
 rem set P=%PICO_ROOT%bin\gcc\msys\1.0\bin
 rem set PATH=%P%;%PATH%
-echo ----------------------------------------------------
 
+echo ----------------------------------------------------
 set P=%PICO_ROOT%bin\gcc-arm-none-eabi\bin
 set PATH=%P%;%PATH%
 
@@ -55,6 +54,7 @@ set PATH=%P%;%PATH%
 
 set PICO_SDK_PATH=%PICO_ROOT%pico-sdk
 set CMAKE_MAKE_PROGRAM=make
+set PICOTOOL_FETCH_FROM_GIT_PATH=%PICO_ROOT%pico-picotool
 
 
 rem set

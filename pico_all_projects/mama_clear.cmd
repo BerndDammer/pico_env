@@ -7,6 +7,9 @@ rmdir pico-sdk /S /Q
 rmdir pioasm /S /Q
 rmdir picotool /S /Q
 rmdir pioasm-install /S /Q
+rmdir ninja /S /Q
+rmdir build_pico /S /Q
+rmdir build_picow /S /Q
 
 del CMakeCache.txt
 del .ninja*.* /S /Q
