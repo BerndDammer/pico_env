@@ -1,3 +1,3 @@
 Call SetEnv.bat
-start bin\cdt\eclipse -data ews_pico
+start bin\cdt\eclipse -data projects
 rem pause
