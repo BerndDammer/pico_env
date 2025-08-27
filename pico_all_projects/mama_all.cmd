@@ -7,7 +7,7 @@ rem set
 rem echo ------------------------------------
 rem pause
 
-call mama_clr.cmd
+call mama_clear.cmd
 
 rem cmake /?
 rem pause
