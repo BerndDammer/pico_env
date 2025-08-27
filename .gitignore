@@ -17,7 +17,7 @@ FreeRTOS-Kernel
 docs_to_sort*
 openocd*
 
-projects/.metadata
+projects
 
 # clone_*.sh
 pic/pico_drp_pin.png
